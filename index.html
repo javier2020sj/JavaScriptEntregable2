@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container shadow-lg rounded-5">
+
+
+        <h1>Alumnos</h1>
+        <div id="nuevoAlumno">
+            <h2>Nuevo Alumno</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="txtDni">DNI:</label>
+                        <input class="form-control" type="text" id="txtDni" required>
+                    </div>
+                    <div class="col">
+                        <label for="txtNombre">Nombre:</label>
+                        <input class="form-control" type="text" id="txtNombre" required>
+                    </div>
+                    <div class="col">
+                        <label for="txtApellido">Apellido:</label>
+                        <input class="form-control" type="text" id="txtApellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="txtEdad">Edad:</label>
+                        <input class="form-control" type="number" id="txtEdad" required>
+                    </div>
+                    <div class="col">
+                        <label for="comboCurso">Nombre:</label>
+                        <select class="form-control" name="comboCurso" id="comboCurso">
+                            <option value="Ciencias Naturales">Ciencias Naturales</option>
+                            <option value="Ciencias Sociales">Ciencias Socuales</option>
+                            <option value="Historia">Historia</option>
+                            <option value="Matemáticas">Matemáticas</option>
+                            <option value="Lengua">Lengua</option>
+                            <option value="Computacion">Computacion</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" id="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+        <div id="listadoAlumnos">
+            <h2>Lista de Alumnos</h2>
+            <div class="row">
+                <div class="col">
+
+            <label for="txtFiltro">Filtrar: </label>
+                    <input type="text" class="form-control col-8" id="txtFiltro" placeholder="Filtrar por nombre...">
+                </div>
+
+                <ul id="lista-alumnos"></ul>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th id="thDni">DNI</th>
+                            <th id="thApellido">Nombre</th>
+                            <th id="thEdad">Edad</th>
+                            <th id="thCurso">Curso</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-alumnos">
+                        <!-- Las filas de la tabla se agregarán aquí dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

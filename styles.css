@@ -1,0 +1,39 @@
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    
+    margin-bottom: 2rem;
+}
+th {
+    text-align: left;
+    text-transform: uppercase;
+}
+td {
+    text-align: left;
+    vertical-align: middle;
+}
+label {
+    padding: 0.5rem;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.container {
+    background-color: #ebebeb;
+    padding: 3rem;
+    margin: 2rem auto;
+}
+#txtFiltro {
+    max-width: 30rem;
+}
